@@ -21,7 +21,7 @@ app.get("/" , (req,res) =>{
 })
 
 // PropertyPulse Routes
-app.use("/api/pp" , require("./routes/propertypulse/ppRoutes"))
+app.use("/api" , require("./routes/propertypulse/ppRoutes"))
 
 app.listen(PORT , () =>{
     console.log("Server is Running at :" , PORT);
